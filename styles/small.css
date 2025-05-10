@@ -1,0 +1,144 @@
+* {
+    margin-top: 0;
+}
+
+body {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+}
+
+header {
+    background-color: #3366ff;
+    text-align: center;
+    color: aliceblue;
+    margin: 0%;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1.5rem;
+    background-color: black;
+    width: 100%;
+    margin-right: 20rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav li {
+    display: inline;
+    /* Hace que los ítems del menú estén en una línea horizontal */
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+img {
+    height: 200px;
+    border-radius: 50px;
+}
+
+#sobremi {
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 50px 0 0 3rem;
+
+}
+
+#sanvicente {
+    margin: 50px 0 0 3rem;
+
+
+}
+
+.mifoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 8rem;
+}
+
+.imagenbandera {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 25rem;
+}
+
+main {
+    display: flex;
+    margin: 3rem;
+}
+
+.articulos {
+    width: 70rem;
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
+
+.card {
+    display: flex;
+}
+
+.menusecundario {
+    width: 15rem;
+    margin-left: 10rem;
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
+
+.menusecundario a {
+    display: block;
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+}
+
+.aboutme {
+    background-color: #3366ff;
+    padding: 1rem;
+    margin-top: 0%;
+    margin-left: 0;
+    width: 68rem;
+    border-radius: 20px 20px 0 0;
+    color: white;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 3px;
+    border-bottom: 3px solid black;
+    width: 40rem;
+    margin-left: 10rem;
+}
+
+h3 {
+    text-align: center;
+    background-color: #3366ff;
+    padding: 9px;
+    margin-top: 0%;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    background-color: #3366ff;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
