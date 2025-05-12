@@ -1,0 +1,52 @@
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 1.6rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 10%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+
+    .columnas {
+        flex-direction: column;
+    }
+
+    .articulos,
+    .menusecundario {
+        margin-bottom: 20px;
+
+    }
+
+
+}
+
+/* Responsive para móviles */
+@media screen and (max-width: 768px) {
+    .columnas {
+        flex-direction: column;
+    }
+
+    .articulos,
+    .menusecundario {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+}

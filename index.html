@@ -8,7 +8,10 @@
     <meta name="description" content="WDD 131 Dynamic Web Fundamentals- week1 ">
     <meta name="author" content="Melissa Abigail Chirino">
     <link href="styles/small.css" type="text/css" rel="stylesheet">
-    <script src="scripts/dates.js" defer></script>
+    <link href="styles/larger.css" type="text/css" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -19,59 +22,62 @@
 <body>
 
     <header>
-        <div class="mifoto"><img src="images/mee.webp" alt="mifoto" width="200"></div>
-        <h1>Melisssa A. Chirino</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">Final</a></li>
-                <li><a href="#">GitHub Profile</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
+        <button type="button" id="menu">X</button>
+
+        <span class="contenedor-imagen">
+            <img src="images/mee.webp" alt="mifoto" width="200">
+        </span>
+
+
+        <h1>Melissa A. Guevara</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+            <a href="#">GitHub Profile</a>
+            <a href="#">LinkedIn</a>
         </nav>
+
     </header>
 
-
     <main>
-
-
-
-
-        <div class="articulos">
-            <h3 class="coursework">Course Work</h3>
-            <section class="card">
-
-                <div id="sobremi">
+        <H1> Home </H1>
+        <div class="fila-superior">
+            <section class="articulos">
+                <h3 class="coursework">Course Work</h3>
+                <section class="card">
                     <ul>
                         <li>Item 1</li>
                         <li>Item 2</li>
                         <li>Item 3</li>
                     </ul>
-
-                    <!--agregar este codigo en el css, es para hacer la lista con punto 
-                      ul {list-style-type: disc; /* o cualquier otro valor como circle, square, etc. */}-->
-                </div>
-
+                </section>
             </section>
 
-
-
+            <section class="menusecundario">
+                <h3>San Vicente, El Salvador</h3>
+                <div class="imagenbandera">
+                    <img src="images/bandera.webp" alt="Bandera" width="200" />
+                    <h2>San Vicente's Flag</h2>
+                </div>
+            </section>
         </div>
-        <div class="menusecundario">
-            <h3>San Vicente, El Salvador</h3>
-            <div class="imagenbandera"><img src="images/bandera.webp" alt="bandera" width="200"></div>
 
+        <section class="certificate">
+            <h3>Web and Computer Programming Certificate</h3>
 
-        </div>
+            <section class="botonera">
+                <button id="boton1all">ALL</button>
+                <button id="boton2cse">CSE</button>
+                <button id="boton3wdd">WDD</button>
+            </section>
 
+            <section id="resultados"></section>
 
         </section>
-
-
-
-        </div>
     </main>
+
+
 
     <footer>
         <p>©<span id="year"></span> &#127803; Melissa Abigail Chirino &#127803; El Salvador</p>
