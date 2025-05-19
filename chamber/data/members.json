@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Tech Solutions Inc.",
+      "address": "123 Main St, Techville",
+      "phone": "555-1234",
+      "website": "https://techsolutions.com",
+      "image": "techsolutions.png",
+      "membershipLevel": 3,
+      "description": "Innovative software development company."
+    },
+    {
+      "name": "Green Gardens",
+      "address": "456 Plant Rd, Green City",
+      "phone": "555-5678",
+      "website": "https://greengardens.com",
+      "image": "greengardens.png",
+      "membershipLevel": 2,
+      "description": "Eco-friendly landscaping services."
+    },
+    {
+      "name": "AutoDrive",
+      "address": "789 Car Blvd, Motor Town",
+      "phone": "555-8765",
+      "website": "https://autodrive.com",
+      "image": "autodrive.png",
+      "membershipLevel": 1,
+      "description": "Automobile dealership and service."
+    },
+    {
+      "name": "SkyNet Broadband",
+      "address": "321 Fiber Ln, Speedville",
+      "phone": "555-4321",
+      "website": "https://skynetbroadband.com",
+      "image": "skynet.png",
+      "membershipLevel": 3,
+      "description": "High-speed internet and telecom services."
+    },
+    {
+      "name": "HealthFirst Clinic",
+      "address": "654 Wellness St, Healthcity",
+      "phone": "555-9876",
+      "website": "https://healthfirstclinic.com",
+      "image": "healthfirst.png",
+      "membershipLevel": 2,
+      "description": "Community health and wellness clinic."
+    },
+    {
+      "name": "Books & Brews",
+      "address": "987 Read Ave, Literatown",
+      "phone": "555-2468",
+      "website": "https://booksandbrews.com",
+      "image": "booksbrews.png",
+      "membershipLevel": 1,
+      "description": "Cafe and bookstore hybrid."
+    },
+    {
+      "name": "Bright Minds Academy",
+      "address": "159 Learn St, Knowville",
+      "phone": "555-3691",
+      "website": "https://brightminds.edu",
+      "image": "brightminds.png",
+      "membershipLevel": 3,
+      "description": "Private school focused on STEM education."
+    }
+  ]
+  
