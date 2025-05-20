@@ -6,18 +6,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    background-color: #bc8e42;
 }
 
 header {
-    background-color: #3366ff;
+    background-color: #e3dbc8;
     text-align: center;
     color: aliceblue;
     margin: 0%;
     width: 100%;
 }
 
-    /* Menu */
+/* Menu */
 nav ul {
     list-style: none;
     padding: 1.5rem;
@@ -78,4 +78,139 @@ nav a:hover {
     width: 80px;
     height: 80px;
     object-fit: contain;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "";
+}
+
+#menu.open::before {
+    content: "";
+}
+
+.navigation {
+    display: flex;
+    justify-content: right;
+    background-color: #eae7e2;
+    padding: 20px 30px;
+    align-items: center;
+    color: #401203;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #401203;
+    ;
+}
+
+.navigation a:hover {
+    color: white;
+    font-weight: 700;
+
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "X“";
+    /* just a wayfinding symbol for the user */
+}
+
+.burgermenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #401203;
+    margin: 3px 0;
+}
+
+.cerrar-menu {
+    display: none;
+
+}
+
+
+
+main {
+    margin: 10px;
+}
+
+footer {
+    background-color: #eae7e2;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center !important;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
