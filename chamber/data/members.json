@@ -9,13 +9,13 @@
         "description": "Handmade Home Decorations."
     },
     {
-        "name": "Green Gardens",
+        "name": "Dulceria Villalta",
         "address": "456 Plant Rd, Green City",
         "phone": "555-5678",
         "website": "https://greengardens.com",
-        "image": "greengardens.png",
+        "image": "images.png",
         "membershipLevel": 2,
-        "description": "Eco-friendly landscaping services."
+        "description": "Handmade Sweet."
     },
     {
         "name": "AutoDrive",
