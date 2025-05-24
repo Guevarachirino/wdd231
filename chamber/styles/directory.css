@@ -31,7 +31,7 @@ nav ul {
 
 nav li {
     display: inline;
-    /* Hace que los ítems del menú estén en una línea horizontal */
+    /* Hace que los Ã­tems del menÃº estÃ©n en una lÃ­nea horizontal */
 
 }
 
@@ -79,6 +79,25 @@ nav a:hover {
     height: 80px;
     object-fit: contain;
 }
+
+/* Ocultar logo de empresa (imagen) cuando estÃ© en vista de lista */
+.list-view .member-card img {
+    display: none;
+}
+
+.list-view .member-card {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Alinear el contenido textual como columnas */
+.list-view .member-card div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1;
+}
+
 
 /* small view navigation */
 #menu {
@@ -133,7 +152,7 @@ nav a:hover {
 }
 
 .active::before {
-    content: "X“";
+    content: "Xâ€œÂ";
     /* just a wayfinding symbol for the user */
 }
 
@@ -193,24 +212,4 @@ footer {
 
 .footer-right {
     text-align: right;
-}
-
-@media screen and (max-width: 600px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        text-align: center !important;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        width: 100%;
-        margin-bottom: 10px;
-    }
 }
