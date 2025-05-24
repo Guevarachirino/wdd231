@@ -4,7 +4,7 @@
         "address": "123 Santa Elena, San Vicente",
         "phone": "555-1234",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
-        "image": "vimarie.jpg",
+        "image": "vimarie.webp",
         "membershipLevel": 3,
         "description": "Handmade Home Decorations."
     },
@@ -13,7 +13,7 @@
         "address": "456 Plant Rd, Green City",
         "phone": "555-5678",
         "website": "https://www.instagram.com/dulceriavillaltasv/?hl=es",
-        "image": "images.png",
+        "image": "images.webp",
         "membershipLevel": 2,
         "description": "Handmade Sweets."
     },
@@ -22,7 +22,7 @@
         "address": "789 Car Blvd, Motor Town",
         "phone": "555-8765",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
-        "image": "masaje.png",
+        "image": "masaje.webp",
         "membershipLevel": 1,
         "description": "Relaxing massages."
     },
@@ -31,7 +31,7 @@
         "address": "321 Fiber Ln, Speedville",
         "phone": "555-4321",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
-        "image": "panaderia.png",
+        "image": "panaderia.webp",
         "membershipLevel": 3,
         "description": "Local bakery."
     },
@@ -40,7 +40,7 @@
         "address": "654 Wellness St, Healthcity",
         "phone": "555-9876",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
-        "image": "pupusas.png",
+        "image": "pupusas.webp",
         "membershipLevel": 2,
         "description": "Salvadoran food."
     },
@@ -49,7 +49,7 @@
         "address": "987 Read Ave, Literatown",
         "phone": "555-2468",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
-        "image": "cafe.png",
+        "image": "cafe.webp",
         "membershipLevel": 1,
         "description": "Cafe and bookstore hybrid."
     },
@@ -58,7 +58,7 @@
         "address": "159 Learn St, Knowville",
         "phone": "555-3691",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
-        "image": "danza.png",
+        "image": "danza.webp",
         "membershipLevel": 3,
         "description": "Salvadoran dance."
     }
