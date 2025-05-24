@@ -1,7 +1,7 @@
 [
     {
         "name": "Vimarie Home",
-        "address": "123 Santa Elena, San Vicente, El Salvador",
+        "address": "123 Santa Elena, San Vicente",
         "phone": "555-1234",
         "website": "https://www.facebook.com/search/top?q=vimarie%20home",
         "image": "vimarie.jpg",
@@ -12,54 +12,54 @@
         "name": "Dulceria Villalta",
         "address": "456 Plant Rd, Green City",
         "phone": "555-5678",
-        "website": "https://greengardens.com",
+        "website": "https://www.instagram.com/dulceriavillaltasv/?hl=es",
         "image": "images.png",
         "membershipLevel": 2,
         "description": "Handmade Sweets."
     },
     {
-        "name": "AutoDrive",
+        "name": "Spa",
         "address": "789 Car Blvd, Motor Town",
         "phone": "555-8765",
-        "website": "https://autodrive.com",
-        "image": "autodrive.png",
+        "website": "https://www.facebook.com/search/top?q=vimarie%20home",
+        "image": "masaje.png",
         "membershipLevel": 1,
-        "description": "Automobile dealership and service."
+        "description": "Relaxing massages."
     },
     {
-        "name": "SkyNet Broadband",
+        "name": "Sweet Delights",
         "address": "321 Fiber Ln, Speedville",
         "phone": "555-4321",
-        "website": "https://skynetbroadband.com",
-        "image": "skynet.png",
+        "website": "https://www.facebook.com/search/top?q=vimarie%20home",
+        "image": "panaderia.png",
         "membershipLevel": 3,
-        "description": "High-speed internet and telecom services."
+        "description": "Local bakery."
     },
     {
-        "name": "HealthFirst Clinic",
+        "name": "Sabores de El Salvador",
         "address": "654 Wellness St, Healthcity",
         "phone": "555-9876",
-        "website": "https://healthfirstclinic.com",
-        "image": "healthfirst.png",
+        "website": "https://www.facebook.com/search/top?q=vimarie%20home",
+        "image": "pupusas.png",
         "membershipLevel": 2,
-        "description": "Community health and wellness clinic."
+        "description": "Salvadoran food."
     },
     {
         "name": "Books & Brews",
         "address": "987 Read Ave, Literatown",
         "phone": "555-2468",
-        "website": "https://booksandbrews.com",
-        "image": "booksbrews.png",
+        "website": "https://www.facebook.com/search/top?q=vimarie%20home",
+        "image": "cafe.png",
         "membershipLevel": 1,
         "description": "Cafe and bookstore hybrid."
     },
     {
-        "name": "Bright Minds Academy",
+        "name": "Escuela folclore Salvadoreño",
         "address": "159 Learn St, Knowville",
         "phone": "555-3691",
-        "website": "https://brightminds.edu",
-        "image": "brightminds.png",
+        "website": "https://www.facebook.com/search/top?q=vimarie%20home",
+        "image": "danza.png",
         "membershipLevel": 3,
-        "description": "Private school focused on STEM education."
+        "description": "Salvadoran dance."
     }
 ]
