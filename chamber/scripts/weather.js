@@ -7,13 +7,13 @@ const myGraphic = document.querySelector('#graphic');
 
 // create variables forthe url
 
-const myKey = "e786808d3a6a707c23fa6cb5f613b6b0"
+const myKey = ""
 const myLat = "13.638835588487488"
 const myLong = "-88.78259102525926"
 
 // construct a full path using template literals
 
-const myURl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperiall`;
+const myURl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
 //try to grab the current weather data 
 async function apiFetch() {
@@ -22,7 +22,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             console.log(data); // testing only
-            // displayResults(data); // uncomment when ready
+            displayResults(data); // uncomment when ready
         } else {
             throw Error(await response.text());
         }
@@ -36,8 +36,8 @@ function displayResults(data) {
     myTown.innerHTML = data.name;
     myDescription.innerHTML = data.weather[0].description;
     myTemperature.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}2x.png`;
-    myGraphic.setAttribute('SRC', iconsrc);
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    myGraphic.setAttribute('src', iconsrc);
     myGraphic.setAttribute('alt', data.weather[0].description)
 
 }
