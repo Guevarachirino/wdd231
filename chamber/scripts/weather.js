@@ -34,5 +34,6 @@ async function apiFetch() {
 function displayResults(data) {
     console.log('hello')
     myTown.innerHTML = data.name
+    myDescription.innerHTML = data.weather[0].description
 }
 apiFetch();
