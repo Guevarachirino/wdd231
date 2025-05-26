@@ -30,5 +30,8 @@ async function apiFetch() {
         console.log(error);
     }
 }
-
+// display the json data into my web page 
+function displayResults(data) {
+    console.log('hello')
+}
 apiFetch();
