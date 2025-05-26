@@ -33,5 +33,6 @@ async function apiFetch() {
 // display the json data into my web page 
 function displayResults(data) {
     console.log('hello')
+    myTown.innerHTML = data.name
 }
 apiFetch();
