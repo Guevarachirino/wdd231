@@ -31,10 +31,12 @@ async function apiFetch() {
     }
 }
 // display the json data into my web page 
-function displayResults(card) {
+function displayResults(data) {
     console.log('hello')
-    myTown.innerHTML = data.name
-    myDescription.innerHTML = data.weather[0].description
-    myTemperature.innerHTML = `${data.main.temp}&deg;F`
+    myTown.innerHTML = data.name;
+    myDescription.innerHTML = data.weather[0].description;
+    myTemperature.innerHTML = `${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}2x.png; 
 }
+//start the process
 apiFetch();
