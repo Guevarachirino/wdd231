@@ -7,7 +7,7 @@ const myGraphic = document.querySelector('#graphic');
 
 // create variables forthe url
 
-const myKey = ""
+const myKey = "e786808d3a6a707c23fa6cb5f613b6b0"
 const myLat = "13.638835588487488"
 const myLong = "-88.78259102525926"
 
