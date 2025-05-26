@@ -31,9 +31,10 @@ async function apiFetch() {
     }
 }
 // display the json data into my web page 
-function displayResults(data) {
+function displayResults(card) {
     console.log('hello')
     myTown.innerHTML = data.name
     myDescription.innerHTML = data.weather[0].description
+    myTemperature.innerHTML = `${data.main.temp}&deg;F`
 }
 apiFetch();
