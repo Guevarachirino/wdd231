@@ -64,3 +64,54 @@ hamButton.addEventListener('click', () => {
 });
 
 
+// --- NUEVO: función para mostrar miembros destacados ---
+async function loadSpotlights() {
+    try {
+        const response = await fetch("data/members.json");
+        const members = await response.json();
+
+        // Filtrar solo gold y silver
+        const filtered = members.filter(m => m.membershipLevel === 3 || m.membershipLevel === 2);
+
+        // Obtener 2 o 3 aleatorios
+        const count = Math.floor(Math.random() * 2) + 2; // 2 o 3
+        const randomMembers = getRandomElements(filtered, count);
+
+        // Contenedor donde mostrar destacados
+        const spotlightContainer = document.getElementById("resultados");
+        if (!spotlightContainer) return;  // si no existe no hace nada
+        spotlightContainer.innerHTML = "";
+
+        randomMembers.forEach(member => {
+            const card = document.createElement("div");
+            card.classList.add("destacado");
+            card.innerHTML = `
+                <h3>${member.name}</h3>
+                <img src="images/${member.image}" alt="${member.name}" />
+                <p><strong>Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+                <p>${member.phone}</p>
+                <p>${member.address}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p>${member.description}</p>
+            `;
+            spotlightContainer.appendChild(card);
+        });
+
+    } catch (error) {
+        console.error("Error loading spotlights:", error);
+    }
+}
+
+function getRandomElements(arr, n) {
+    const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, n);
+}
+
+// Solo llamamos loadSpotlights si existe el contenedor de destacados (para evitar problemas en la página que no lo tenga)
+document.addEventListener("DOMContentLoaded", () => {
+    if (document.getElementById("resultados")) {
+        loadSpotlights();
+    }
+});
+
+
