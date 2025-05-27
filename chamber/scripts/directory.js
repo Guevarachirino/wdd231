@@ -64,37 +64,29 @@ hamButton.addEventListener('click', () => {
 });
 
 //get random element
-
-const array_json = JSON.parse(json_data);
-
 // Función para obtener 3 elementos aleatorios
-function obtenerElementosAleatorios(array, numElementos) {
-    let elementosAleatorios = [];
-    const arrayLength = array.length;
+function mostrarMiembrosAleatorios(members) {
+    const resultadoDiv = document.getElementById("resultado");
+    resultadoDiv.innerHTML = ""; // Limpiar contenido anterior
 
-    if (numElementos > arrayLength) {
-        numElementos = arrayLength;
-    }
+    // Filtrar solo miembros GOLD o SILVER
+    const miembrosFiltrados = members.filter(member =>
+        member.membershipLevel === 3 || member.membershipLevel === 2
+    );
 
-    for (let i = 0; i < numElementos; i++) {
-        let indiceAleatorio;
-        do {
-            indiceAleatorio = Math.floor(Math.random() * arrayLength);
-        } while (elementosAleatorios.includes(array[indiceAleatorio]));
-        elementosAleatorios.push(array[indiceAleatorio]);
-    }
-    return elementosAleatorios;
+    //Obtener 3 aleatorios entre los filtrados
+    const aleatorios = obtenerElementosAleatorios(miembrosFiltrados, 3);
+
+    aleatorios.forEach(member => {
+        const card = document.createElement("div");
+        card.classList.add("destacado");
+        card.innerHTML = `
+            <h4>${member.name}</h4>
+            <img src="images/${member.image}" alt="${member.name}">
+            <p><strong>Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+            <p>${member.description}</p>
+        `;
+        resultadoDiv.appendChild(card);
+    });
 }
 
-// Llamar a la función y obtener los elementos
-const elementosAleatorios = obtenerElementosAleatorios(members, 3);
-
-// Mostrar los elementos en el div
-const resultadoDiv = document.getElementById("resultado");
-resultadoDiv.innerHTML = "";
-
-for (const elemento of elementosAleatorios) {
-    const p = document.createElement("p");
-    p.textContent = `Elemento: ${elemento.nombre}`;
-    resultadoDiv.appendChild(p);
-}
