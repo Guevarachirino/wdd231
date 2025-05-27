@@ -63,11 +63,38 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-//footer
-const getyear = document.getElementById('year');
-const actualyear = new Date().getFullYear();
-getyear.textContent = actualyear;
+//get random element
 
+const array_json = JSON.parse(json_data);
 
-let text = document.lastModified;
-document.getElementById("oLastModif").innerHTML = text;
+// Función para obtener 3 elementos aleatorios
+function obtenerElementosAleatorios(array, numElementos) {
+    let elementosAleatorios = [];
+    const arrayLength = array.length;
+
+    if (numElementos > arrayLength) {
+        numElementos = arrayLength;
+    }
+
+    for (let i = 0; i < numElementos; i++) {
+        let indiceAleatorio;
+        do {
+            indiceAleatorio = Math.floor(Math.random() * arrayLength);
+        } while (elementosAleatorios.includes(array[indiceAleatorio]));
+        elementosAleatorios.push(array[indiceAleatorio]);
+    }
+    return elementosAleatorios;
+}
+
+// Llamar a la función y obtener los elementos
+const elementosAleatorios = obtenerElementosAleatorios(members, 3);
+
+// Mostrar los elementos en el div
+const resultadoDiv = document.getElementById("resultado");
+resultadoDiv.innerHTML = "";
+
+for (const elemento of elementosAleatorios) {
+    const p = document.createElement("p");
+    p.textContent = `Elemento: ${elemento.nombre}`;
+    resultadoDiv.appendChild(p);
+}
