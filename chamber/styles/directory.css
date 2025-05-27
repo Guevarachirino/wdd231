@@ -239,3 +239,53 @@ footer {
 .footer-right {
     text-align: right;
 }
+
+/*nuevo estilo*/
+#resultados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.destacado {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.destacado:hover {
+    transform: scale(1.03);
+}
+
+.destacado img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.destacado h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #2a2a2a;
+}
+
+.destacado p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.destacado a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.destacado a:hover {
+    text-decoration: underline;
+}
