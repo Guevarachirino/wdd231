@@ -66,7 +66,7 @@ hamButton.addEventListener('click', () => {
 //get random element
 // Función para obtener 3 elementos aleatorios
 function mostrarMiembrosAleatorios(members) {
-    const resultadoDiv = document.getElementById("resultado");
+    const resultadoDiv = document.getElementById("resultados");
     resultadoDiv.innerHTML = ""; // Limpiar contenido anterior
 
     // Filtrar solo miembros GOLD o SILVER
