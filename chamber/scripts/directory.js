@@ -65,28 +65,55 @@ hamButton.addEventListener('click', () => {
 
 //get random element
 // Función para obtener 3 elementos aleatorios
+
+// Función para obtener N elementos aleatorios de un array
+function obtenerElementosAleatorios(array, n) {
+    const shuffled = array.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, n);
+}
+
+// Función para mostrar entre 2 y 3 miembros gold o silver al azar
 function mostrarMiembrosAleatorios(members) {
     const resultadoDiv = document.getElementById("resultados");
-    resultadoDiv.innerHTML = ""; // Limpiar contenido anterior
+    resultadoDiv.innerHTML = "";
 
-    // Filtrar solo miembros GOLD o SILVER
-    const miembrosFiltrados = members.filter(member =>
-        member.membershipLevel === 3 || member.membershipLevel === 2
-    );
+    // Filtrar solo gold y silver
+    const miembrosFiltrados = members.filter(m => m.membershipLevel === 3 || m.membershipLevel === 2);
 
-    //Obtener 3 aleatorios entre los filtrados
-    const aleatorios = obtenerElementosAleatorios(miembrosFiltrados, 3);
+    // Elegir aleatoriamente 2 o 3
+    const cantidad = Math.floor(Math.random() * 2) + 2;
+
+    const aleatorios = obtenerElementosAleatorios(miembrosFiltrados, cantidad);
 
     aleatorios.forEach(member => {
         const card = document.createElement("div");
         card.classList.add("destacado");
         card.innerHTML = `
-            <h4>${member.name}</h4>
-            <img src="images/${member.image}" alt="${member.name}">
-            <p><strong>Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
-            <p>${member.description}</p>
-        `;
+        <h3>${member.name}</h3>
+        <img src="images/${member.image}" alt="${member.name}" />
+        <p><strong>Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+        <p><strong>Teléfono:</strong> ${member.phone}</p>
+        <p><strong>Dirección:</strong> ${member.address}</p>
+        <p><strong>Sitio web:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p>${member.description}</p>
+      `;
         resultadoDiv.appendChild(card);
     });
 }
 
+// Cargar el JSON desde archivo externo
+async function loadMembers() {
+    try {
+        const response = await fetch("data/members.json");
+        if (!response.ok) throw new Error("Error al cargar JSON");
+        const members = await response.json();
+        mostrarMiembrosAleatorios(members);
+    } catch (error) {
+        console.error("Error loading members:", error);
+    }
+}
+
+// Ejecutar cuando la página esté lista
+document.addEventListener("DOMContentLoaded", () => {
+    loadMembers();
+});
