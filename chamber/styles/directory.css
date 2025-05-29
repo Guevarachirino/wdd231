@@ -335,17 +335,30 @@ footer {
     display: none;
 }
 
-img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
 .slideshow-container {
     max-width: 500px;
     position: relative;
     margin: auto;
-    width: 100%;
+    overflow: hidden;
 }
+
+.slideshow-container .mySlides {
+    width: 100%;
+    display: none;
+    /* útil si luego haces el slideshow con JS */
+}
+
+.mySlides img {
+    width: 100%;
+    /* hace que la imagen se ajuste al contenedor */
+    height: auto;
+    /* mantiene la proporción */
+    display: block;
+    /* elimina espacios blancos debajo */
+    border-radius: 8px;
+    /* opcional: esquinas redondeadas */
+}
+
 
 /* Caption text */
 .text {
