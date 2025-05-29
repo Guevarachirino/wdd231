@@ -66,12 +66,17 @@ nav a:hover {
 
 .member-card {
     border: 1px solid #ccc;
-    border-radius: 8px;
     padding: 1rem;
-    background-color: #f9f9f9;
     display: flex;
     gap: 1rem;
     align-items: center;
+
+
+    background-color: hsla(0, 0%, 50%, 0.3);
+    /* gris 50% con 30% de opacidad */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 
 .member-card img {
@@ -188,12 +193,12 @@ footer {
     margin-top: 30px;
 }
 
-/*home page, weather css*/
+/*home page, weather css... en pausa probando nuevo codigo
 .card {
     border: 1px solid;
     background-color: #f6f0da;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -213,6 +218,73 @@ footer {
     color: #2b302f;
     margin: .3rem 0;
 }
+
+
+#forecast {
+    border: 1px solid;
+    background-color: #f6f0da;
+    border-radius: 10px;
+    text-align: right;
+    ;
+
+}
+*/
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.card {
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 1rem;
+    background-color: hsla(0, 0%, 50%, 0.3);
+    /* gris 50% con 30% de opacidad */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+#forecast {
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 1rem;
+    background-color: hsla(0, 0%, 50%, 0.3);
+    /* gris 50% con 30% de opacidad */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+/* Estilos de la tarjeta */
+.card p {
+    color: #000;
+}
+
+.card h2 {
+    color: #2b302f;
+    margin: .3rem 0;
+}
+
+.card #description {
+    text-transform: capitalize;
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+.card #temperature {
+    font-size: 2rem;
+    color: #2b302f;
+    margin: .3rem 0;
+}
+
+
+
+/*footer*/
 
 .footer-container {
     display: flex;
@@ -247,6 +319,12 @@ footer {
     gap: 1rem;
     justify-content: center;
     margin-top: 2rem;
+
+    border: 1px solid;
+    background-color: #ac9c6a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
 }
 
 

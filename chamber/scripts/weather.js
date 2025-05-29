@@ -5,9 +5,10 @@ const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
 
 
+
 // create variables forthe url
 
-const myKey = ""
+const myKey = "e786808d3a6a707c23fa6cb5f613b6b0"
 const myLat = "13.638835588487488"
 const myLong = "-88.78259102525926"
 
@@ -41,5 +42,45 @@ function displayResults(data) {
     myGraphic.setAttribute('alt', data.weather[0].description)
 
 }
+// Nueva función para 3 días
+async function getThreeDayForecast() {
+    const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+
+    try {
+        const response = await fetch(forecastUrl);
+        if (response.ok) {
+            const data = await response.json();
+
+            const resultadosDiv = document.getElementById('forecast');
+            resultadosDiv.innerHTML = '';
+
+            const dailyData = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
+
+            dailyData.forEach(day => {
+                const date = new Date(day.dt_txt);
+                const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+                const description = day.weather[0].description;
+                const tempMin = day.main.temp_min.toFixed(1);
+                const tempMax = day.main.temp_max.toFixed(1);
+
+                resultadosDiv.innerHTML += `
+            <div class="destacado">
+              <h3>${dayName}</h3>
+              <p>${description}</p>
+              <p>Min: ${tempMin}&deg;F</p>
+              <p>Max: ${tempMax}&deg;F</p>
+            </div>
+          `;
+            });
+
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log('Error cargando pronóstico:', error);
+    }
+}
+
 //start the process
 apiFetch();
+getThreeDayForecast();
