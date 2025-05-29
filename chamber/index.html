@@ -35,7 +35,7 @@
         <nav class="navigation">
             <img src="images/sanvicentelogo.webp" alt="logo" width="100" height="100">
             <a href="index.html">Home</a>
-            <a href="#">Directory</a>
+            <a href="directory.html">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
@@ -45,10 +45,35 @@
     <main>
         <h1>Home</h1>
 
-        <div class="w3-content w3-section" style="max-width:500px">
-            <img class="mySlides" src="images/torre.jpg" style="width:100%">
-            <img class="mySlides" src="images/san.vicente.jpg" style="width:100%">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/torre.jpg" style="width:100%">
+                <div class="text">San Vicente, Tower</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/san.vicente.jpg" style="width:100%">
+                <div class="text">San Vicente, City</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/torre.jpg" style="width:100%">
+                <div class="text">San vicente</div>
+            </div>
+
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
         <div class="card">
             <p>Current Weather</p>
             <h2 id="town"></h2>
