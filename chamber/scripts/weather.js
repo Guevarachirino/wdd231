@@ -6,6 +6,7 @@ const myGraphic = document.querySelector('#graphic');
 
 
 
+
 // create variables forthe url
 
 const myKey = "e786808d3a6a707c23fa6cb5f613b6b0"
