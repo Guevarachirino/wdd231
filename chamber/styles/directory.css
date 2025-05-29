@@ -344,6 +344,7 @@ img {
     max-width: 500px;
     position: relative;
     margin: auto;
+    width: 100%;
 }
 
 /* Caption text */
@@ -386,6 +387,7 @@ img {
     animation-name: fade;
     animation-duration: 6s;
 }
+
 
 @keyframes fade {
     from {
