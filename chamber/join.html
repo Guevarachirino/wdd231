@@ -20,6 +20,7 @@
     <link href="styles/directory.css" type="text/css" rel="stylesheet">
     <link href="styles/large.css" type="text/css" rel="stylesheet">
     <script src="scripts/menuh.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -45,7 +46,7 @@
 
         <h1>Membership Aplication Form</h1>
 
-        <form method="GET" action="thanks.html" class="designOne">
+        <form method="GET" action="thankyou.html" class="designOne">
             <label>First Name <input type="text" name="first" required autocomplete="given-name"
                     title="Your First Name"></label>
             <label>Last Name <input type="text" name="last" required autocomplete="family-name"
@@ -58,9 +59,8 @@
                     placeholder="987-555-1234"></label>
             <label>Organization <input type="text" name="organizational-title" required
                     autocomplete="organization title" title="title"></label>
-            <label>Business Description<input type="text" name="organizational-title" required
-                    autocomplete="organization title" title="title"></label>
-
+            <label>Business Description<textarea name="textarea" rows="7"
+                    cols="50">Write something here</textarea></label>
 
             <h3>Membership Level</h3>
             <label><input type="radio" name="membership" value="npmembership" checked> NP Membership</label>
@@ -71,9 +71,31 @@
             <input type="hidden" name="form_timestamp" id="form_timestamp" value="{{current_datetime}}">
 
 
-
-
             <input type="submit" value="Submit">
+
+
+            <section class="botonera">
+                <div>
+                    <p> Non Profit Membership Level</p>
+                    <button id="boton1all">Learn More</button>
+                </div>
+                <div>
+                    <p> Bronze Membership Level</p>
+                    <button id="boton1all">Learn More</button>
+                </div>
+                <div>
+                    <p> Silver Membership Level</p>
+                    <button id="boton1all">Learn More</button>
+                </div>
+                <div>
+                    <p> Gold Membership Level</p>
+                    <button id="boton1all">Learn More</button>
+                </div>
+
+
+
+
+            </section>
         </form>
 
 
