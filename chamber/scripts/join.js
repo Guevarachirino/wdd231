@@ -3,9 +3,14 @@ const myInfo = new URLSearchParams(window.location.search);
 
 document.querySelector('#results').innerHTML = `
 <p>Name ${myInfo.get('first')} ${myInfo.get('last')} </p>
-<p>Organizational title ${myInfo.get('ordinance')} ${myInfo.get('date')} in the ${myInfo.get('location')}</p>
+<p>Organizational title: ${myInfo.get('organizational-title')} </p>
+<p>Your email is: ${myInfo.get('email')}
 <p>Your Phone: ${myInfo.get('phone')}</p>
-<p>Your email is: ${myInfo.get('email')}`
+<p>Organization: ${myInfo.get('organization')}</p>
+<p>Business Description: ${myInfo.get('textarea')}</p>
+<p>Membership Level: ${myInfo.get('membership')}</p>
+<p>Current Data: ${myInfo.get('form_timestamp')}</p>
+`
 
 
 
