@@ -24,7 +24,13 @@ window.addEventListener('click', event => {
     }
 });
 
-
+// Solo ejecuta si estamos en join.html
+if (window.location.pathname.includes("join.html")) {
+    const timestampInput = document.getElementById('form_timestamp');
+    const now = new Date();
+    const formatted = now.toLocaleString(); // ej: "31/5/2025, 14:35:22"
+    timestampInput.value = formatted;
+}
 // solo para funcione al estar en thankyou.html
 // Verifica si estamos en thankyou.html
 if (window.location.pathname.includes("thankyou.html")) {
