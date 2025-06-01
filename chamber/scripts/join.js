@@ -23,3 +23,20 @@ window.addEventListener('click', event => {
         event.target.style.display = 'none';
     }
 });
+
+
+// solo para funcione al estar en thankyou.html
+// Verifica si estamos en thankyou.html
+if (window.location.pathname.includes("thankyou.html")) {
+    const params = new URLSearchParams(window.location.search);
+
+    document.querySelector('#thannkyouresult').innerHTML = `
+      <h2>Your Submission</h2>
+      <p><strong>First Name:</strong> ${params.get('first')}</p>
+      <p><strong>Last Name:</strong> ${params.get('last')}</p>
+      <p><strong>Email:</strong> ${params.get('email')}</p>
+      <p><strong>Mobile Number:</strong> ${params.get('phone')}</p>
+      <p><strong>Business Name:</strong> ${params.get('organization')}</p>
+      <p><strong>Submission Date:</strong> ${params.get('form_timestamp')}</p>
+    `;
+}
