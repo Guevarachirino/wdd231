@@ -30,7 +30,7 @@ window.addEventListener('click', event => {
 if (window.location.pathname.includes("thankyou.html")) {
     const params = new URLSearchParams(window.location.search);
 
-    document.querySelector('#thannkyouresult').innerHTML = `
+    document.querySelector('#thankyouresult').innerHTML = `
       <h2>Your Submission</h2>
       <p><strong>First Name:</strong> ${params.get('first')}</p>
       <p><strong>Last Name:</strong> ${params.get('last')}</p>
