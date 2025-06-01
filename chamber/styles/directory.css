@@ -450,6 +450,8 @@ input:-webkit-autofill {
     justify-content: space-between;
     align-items: flex-start;
     gap: 0.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 
 form.designOne {
@@ -483,6 +485,15 @@ form.designOne {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
+    opacity: 0.9;
+    /* 🔍 cambia de 0.0 (transparente) a 1.0 (completo) */
+    transition: opacity 0.3s ease;
+}
+
+.card1 button:hover {
+    opacity: 1;
+    /* más visible al pasar el mouse */
+
 }
 
 /*estilo para los modales*/
