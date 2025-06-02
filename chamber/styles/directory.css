@@ -428,15 +428,15 @@ form {
         padding: .75rem 1.5rem;
         margin: 2rem 0;
         font-size: 1.2rem;
-        /* -webkit-appearance: none;*/
+        -webkit-appearance: none;
         appearance: none;
     }
 }
 
-/*
+
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
-}*/
+}
 
 #results {
     background-color: #F4F1DE;
