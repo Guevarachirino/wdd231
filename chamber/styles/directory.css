@@ -446,6 +446,19 @@ input:-webkit-autofill {
 }
 
 /*estilo para las tarjetas de membrecia */
+
+@keyframes aparecerDesdeAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .form-container {
     display: flex;
     justify-content: space-between;
@@ -475,14 +488,7 @@ form.designOne {
     /* o 180px o 150px según el tamaño deseado */
     margin: 0 auto;
     /* para centrar la tarjeta */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card1:hover {
-    transform: scale(1.05);
-    /* 5% más grande */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* sombra suave */
+    animation: aparecerDesdeAbajo 0.6s ease-out forwards;
 }
 
 .card1 button {
@@ -494,15 +500,10 @@ form.designOne {
     cursor: pointer;
     opacity: 0.9;
     /* 🔍 cambia de 0.0 (transparente) a 1.0 (completo) */
+    opacity: 0;
+    /* Oculta al inicio */
     transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-}
-
-.card1 button:hover {
-    background-color: #E07A5F;
-    /* nuevo color al hacer hover */
-    color: #fff8f0;
-    /* opcional: un tono más suave de blanco */
-    opacity: 1;
+    animation: aparecerDesdeAbajo 0.6s ease-out forwards;
 }
 
 /*estilo para los modales*/
