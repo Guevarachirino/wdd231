@@ -433,9 +433,10 @@ form {
     }
 }
 
+/*
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
-}
+}*/
 
 #results {
     background-color: #F4F1DE;
