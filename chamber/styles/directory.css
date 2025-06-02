@@ -385,7 +385,7 @@ form {
         font-size: .9rem;
         color: #632a1a;
         margin: 1.5rem 0 .2rem 0;
-        border-bottom: 1px;
+        border-bottom: 1px solid #632a1a;
     }
 
     input[type=text],
@@ -428,7 +428,7 @@ form {
         padding: .75rem 1.5rem;
         margin: 2rem 0;
         font-size: 1.2rem;
-       /* -webkit-appearance: none;*/
+        /* -webkit-appearance: none;*/
         appearance: none;
     }
 }
