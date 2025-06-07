@@ -1,0 +1,21 @@
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+    }
+  }
+  

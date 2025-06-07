@@ -1,0 +1,74 @@
+/* Paleta de colores OlasYSolSV */
+
+:root {
+    --color-agua: #00bcd4;         /* Azul turquesa */
+    --color-sol: #f1c40f;          /* Amarillo sol */
+    --color-sol-oscuro: #f39c12;   /* Amarillo oscuro */
+    --color-fondo: #ffffff;        /* Blanco */
+    --color-texto-principal: #333333;  /* Gris oscuro */
+    --color-texto-secundario: #666666; /* Gris medio */
+    --color-boton-hover: #00a1c4;  /* Azul turquesa oscuro */
+    --color-borde: #e0e0e0;        /* Gris claro */
+  }
+  
+  /* Estilos base */
+  
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  /* Encabezados */
+  
+  h1, h2, h3 {
+    color: var(--color-agua);
+  }
+  
+  /* Enlaces */
+  
+  a {
+    color: var(--color-agua);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-sol);
+    text-decoration: underline;
+  }
+  
+  /* Botones */
+  
+  button {
+    background-color: var(--color-sol);
+    border: none;
+    color: var(--color-fondo);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--color-sol-oscuro);
+  }
+  
+  /* Líneas separadoras */
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-borde);
+    margin: 20px 0;
+  }
+  
+  /* Texto secundario */
+  
+  p.secondary {
+    color: var(--color-texto-secundario);
+    font-size: 0.9rem;
+  }
+  
