@@ -232,22 +232,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-/* Para pantallas medianas (tablets, laptops pequeñas) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 columnas */
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .cards-container div {
-        font-size: 0.95rem;
-    }
-
-    .cards-container img {
-        max-height: 180px;
-        object-fit: cover;
-    }
-}
