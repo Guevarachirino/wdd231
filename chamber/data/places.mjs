@@ -12,27 +12,27 @@ export const places = [
         "address": "Municipio de San Vicente, Departamento de San Vicente",
         "cost": "Varía según la actividad",
         "descripcion": "El segundo volcán más alto de El Salvador, conocido por su forma simétrica y su actividad volcánica histórica.",
-        "imagen_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Volcan_Chinchontepec.jpg"
+        "imagen_url": "volcan.webp"
     },
     {
         "name": "Parque Nacional Walter Thilo Deininger",
         "address": "Carretera Litoral, km 55, Hacienda San Diego, La Libertad",
         "cost": "Varía según la actividad",
         "descripcion": "Parque natural con senderos, canopy, rápel y miradores, ideal para actividades ecológicas y de aventura.",
-        "imagen_url": "https://istu.gob.sv/wp-content/uploads/2021/02/deninger-1.jpg"
+        "imagen_url": "parque.webp"
     },
     {
         "name": "Laguna de Apastepeque",
         "address": "Cantón Apastepeque, Municipio de Apastepeque, San Vicente",
         "cost": "$1.50 nacionales, $3.00 extranjeros",
         "descripcion": "Laguna volcánica popular para paseos en lancha, natación y pesca, con áreas de picnic y restaurantes.",
-        "imagen_url": "https://market.gob.sv/storage/2023/05/Laguna-de-Apastepeque-2.jpg"
+        "imagen_url": "laguna.webp"
     },
     {
         "name": "Joya de Cerén",
         "address": "Cantón Joya de Cerén, San Juan Opico, La Libertad",
         "costo": "Varía según nacionalidad",
         "descripcion": "Sitio arqueológico maya declarado Patrimonio de la Humanidad por la UNESCO, conocido como la 'Pompeya de América'.",
-        "imagen_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Joya_de_Ceren%2C_El_Salvador.jpg"
+        "imagen_url": "arqueologico.webp"
     }
 ]
