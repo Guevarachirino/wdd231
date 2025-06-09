@@ -1,53 +1,61 @@
 
 export const places = [
     {
-        "name": "Torre de San Vicente",
-        "address": "Parque Central de San Vicente, frente a la alcaldía",
-        "cost": "Entrada gratuita",
-        "descripcion": "Monumento emblemático de 40 metros de altura, reconstruido tras el terremoto de 2001, que ofrece vistas panorámicas de la ciudad y sus alrededores.",
+        "name": "San Vicente Tower",
+        "address": "San Vicente Central Park, in front of City Hall",
+        "cost": "Free admission",
+        "descripcion": "Iconic 40-meter-tall monument, rebuilt after the 2001 earthquake, offering panoramic views of the city and its surroundings.",
         "imagen_url": "torresanvicente.webp"
     },
     {
-        "name": "Volcán de San Vicente (Chichontepec)",
-        "address": "Municipio de San Vicente, Departamento de San Vicente",
-        "cost": "Varía según la actividad",
-        "descripcion": "El segundo volcán más alto de El Salvador, conocido por su forma simétrica y su actividad volcánica histórica.",
+        "name": "San Vicente Volcano (Chichontepec)",
+        "address": "San Vicente Municipality, San Vicente Department",
+        "cost": "Varies depending on activity",
+        "descripcion": "The second-highest volcano in El Salvador, known for its symmetrical shape and historic volcanic activity.",
         "imagen_url": "volcan.webp"
     },
     {
-        "name": "Parque Nacional Walter Thilo Deininger",
-        "address": "Carretera Litoral, km 55, Hacienda San Diego, La Libertad",
-        "cost": "Varía según la actividad",
-        "descripcion": "Parque natural con senderos, canopy, rápel y miradores, ideal para actividades ecológicas y de aventura.",
+        "name": "Walter Thilo Deininger National Park",
+        "address": "Litoral Highway, km 55, Hacienda San Diego, La Libertad",
+        "cost": "Varies depending on activity",
+        "descripcion": "Nature park with trails, canopy, rappelling, and viewpoints, ideal for eco-tourism and adventure activities.",
         "imagen_url": "parque.webp"
     },
     {
         "name": "Laguna de Apastepeque",
-        "address": "Cantón Apastepeque, Municipio de Apastepeque, San Vicente",
-        "cost": "$1.50 nacionales, $3.00 extranjeros",
-        "descripcion": "Laguna volcánica popular para paseos en lancha, natación y pesca, con áreas de picnic y restaurantes.",
+        "address": "Apastepeque Canton, Apastepeque Municipality, San Vicente",
+        "cost": "$1.50 nationals, $3.00 foreigners",
+        "descripcion": "Volcanic lagoon popular for boat rides, swimming, and fishing, with picnic areas and restaurants. One of the best place to enjoy with fiends and family ",
         "imagen_url": "laguna.webp"
     },
     {
         "name": "Joya de Cerén",
-        "address": "Cantón Joya de Cerén, San Juan Opico, La Libertad",
-        "costo": "Varía según nacionalidad",
-        "descripcion": "Sitio arqueológico maya declarado Patrimonio de la Humanidad por la UNESCO, conocido como la 'Pompeya de América'.",
+        "address": "Joya de Cerén Canton, San Juan Opico, La Libertad",
+        "cost": "Varies by nationality",
+        "descripcion": "Mayan archaeological site declared a UNESCO World Heritage Site, known as the 'Pompeii of the Americas'.",
         "imagen_url": "arqueologico.webp"
     },
     {
-        "name": "Bar Y Restaurante Casa Vieja",
+        "name": "Casa Vieja Bar & Restaurant",
         "address": "San Vicente, El Salvador",
-        "cost": "$10 a 15",
-        "descripcion": "Restaurante con un toque colonial, famoso por sus platos tradicionales y ambiente acogedor.",
+        "cost": "$10 to $15",
+        "descripcion": "Restaurant with a colonial touch, famous for its traditional dishes and cozy atmosphere.",
         "imagen_url": "laguna.webp"
     },
     {
         "name": "Vicentina's Pupusería",
         "address": "Calle Juan Ulloa Canas 26, San Vicente, El Salvador",
-        "cost": "$10 a 15",
-        "descripcion": "Especializada en pupusas tradicionales salvadoreñas, ofreciendo un ambiente acogedor y atención al cliente excepcional.",
-        "imagen_url": "laguna.webp"
+        "cost": "$10 to $15",
+        "descripcion": "Specializing in traditional Salvadoran pupusas, offering a welcoming environment and exceptional customer service.",
+        "imagen_url": "pupusas 2.webp"
     },
+    {
+        "name": "Amapulapa Water Park",
+        "address": "Calle Juan Ulloa Canas casa #73, San Vicente, El Salvador",
+        "cost": "$10 a 15",
+        "descripcion": "The richness of this natural park is found in its volcanic soil dominated by ash and lava. Where many water springs emerge and nourish the area",
+        "imagen_url": "amapulapa.webp"
+    }
+
 
 ]
