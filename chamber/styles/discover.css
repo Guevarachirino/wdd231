@@ -134,6 +134,65 @@ main {
     margin: 10px;
 }
 
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.cards-container div {
+    background-color: #fff9f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container h2 {
+    font-size: 1.2rem;
+    margin: 0.75rem;
+    color: #401203;
+}
+
+.cards-container figure {
+    margin: 0;
+}
+
+.cards-container img {
+    height: auto;
+    display: block;
+    border-radius: 100px;
+    width: 35%;
+    margin: 0 3em .5em 0;
+    float: left;
+    shape-outside:
+        circle();
+}
+
+.cards-container address,
+.cards-container p {
+    margin: 0.5rem 1rem;
+    font-style: normal;
+}
+
+.cards-container button {
+    background-color: #bc8e42;
+    color: white;
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cards-container button:hover {
+    background-color: #a8742c;
+}
+
+
 footer {
     background-color: #eae7e2;
     padding: 20px;
@@ -166,4 +225,29 @@ footer {
 
 .footer-right {
     text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Para pantallas medianas (tablets, laptops pequeñas) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas */
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .cards-container div {
+        font-size: 0.95rem;
+    }
+
+    .cards-container img {
+        max-height: 180px;
+        object-fit: cover;
+    }
 }

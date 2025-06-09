@@ -34,5 +34,20 @@ export const places = [
         "costo": "Varía según nacionalidad",
         "descripcion": "Sitio arqueológico maya declarado Patrimonio de la Humanidad por la UNESCO, conocido como la 'Pompeya de América'.",
         "imagen_url": "arqueologico.webp"
-    }
+    },
+    {
+        "name": "Bar Y Restaurante Casa Vieja",
+        "address": "San Vicente, El Salvador",
+        "cost": "$10 a 15",
+        "descripcion": "Restaurante con un toque colonial, famoso por sus platos tradicionales y ambiente acogedor.",
+        "imagen_url": "laguna.webp"
+    },
+    {
+        "name": "Vicentina's Pupusería",
+        "address": "Calle Juan Ulloa Canas 26, San Vicente, El Salvador",
+        "cost": "$10 a 15",
+        "descripcion": "Especializada en pupusas tradicionales salvadoreñas, ofreciendo un ambiente acogedor y atención al cliente excepcional.",
+        "imagen_url": "laguna.webp"
+    },
+
 ]
