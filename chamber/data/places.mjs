@@ -40,7 +40,7 @@ export const places = [
         "address": "San Vicente, El Salvador",
         "cost": "$10 to $15",
         "descripcion": "Restaurant with a colonial touch, famous for its traditional dishes and cozy atmosphere.",
-        "imagen_url": "laguna.webp"
+        "imagen_url": "unnamed.webp"
     },
     {
         "name": "Vicentina's Pupusería",
