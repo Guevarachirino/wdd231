@@ -25,7 +25,7 @@ export const places = [
         "name": "Laguna de Apastepeque",
         "address": "Apastepeque Canton, Apastepeque Municipality, San Vicente",
         "cost": "$1.50 nationals, $3.00 foreigners",
-        "descripcion": "Volcanic lagoon popular for boat rides, swimming, and fishing, with picnic areas and restaurants. One of the best place to enjoy with fiends and family ",
+        "descripcion": "Volcanic lagoon popular for boat rides, swimming, and fishing, with picnic areas and restaurants. One of the best places to enjoy with fiends and family ",
         "imagen_url": "laguna.webp"
     },
     {
