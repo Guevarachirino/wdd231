@@ -168,7 +168,7 @@ main {
     width: 35%;
     margin: 0 3em .5em 0;
     float: left;
-    shape-outside: circle(50%);
+    shape-outside: circle();
 }
 
 .cards-container address,
@@ -192,7 +192,13 @@ main {
     background-color: #a8742c;
 }
 
-
+.sidebar-message {
+    text-align: center;
+    font-size: large;
+    color: brown;
+    padding: 20px;
+    background-color: #e3dbc8;
+}
 
 
 footer {
