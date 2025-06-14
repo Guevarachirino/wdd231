@@ -1,7 +1,8 @@
 async function loadRandomReview() {
+    console.log("Intentando cargar reseña aleatoria...");
     try {
         const response = await fetch("data/reviews.json");
-        if (!response.ok) throw new Error('No se pudo cargar el archivo JSON.');
+        if (!response.ok) throw new Error("No se pudo cargar el archivo JSON.");
 
         const reviews = await response.json();
 
@@ -10,14 +11,12 @@ async function loadRandomReview() {
 
         const reviewDiv = document.getElementById('review');
 
-        // Formatear la fecha (opcional: cambiar formato)
         const date = new Date(review.date).toLocaleDateString('es-SV', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
         });
 
-        // Crear las estrellas según rating
         const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
 
         reviewDiv.innerHTML = `
@@ -31,7 +30,9 @@ async function loadRandomReview() {
         </blockquote>
       `;
     } catch (error) {
-        console.error('Error cargando la reseña:', error);
-        document.getElementById('review').textContent = 'No se pudo cargar la reseña.';
+        console.error("Error cargando la reseña:", error);
+        document.getElementById('review').textContent = "No se pudo cargar la reseña.";
     }
 }
+
+loadRandomReview(); // 👈 No lo olvides
