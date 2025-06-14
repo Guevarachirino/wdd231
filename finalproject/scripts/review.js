@@ -1,6 +1,6 @@
 async function loadRandomReview() {
     try {
-        const response = await fetch('data/reviews.json');
+        const response = await fetch("data/reviews.json");
         if (!response.ok) throw new Error('No se pudo cargar el archivo JSON.');
 
         const reviews = await response.json();
