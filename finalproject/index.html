@@ -19,7 +19,7 @@
     <link href="styles/large.css" type="text/css" rel="stylesheet">
     <link href="styles/small.css" type="text/css" rel="stylesheet">
     <script src="scripts/menuresponsive.js" defer></script>
-    <script src="scripts/random.js" defer></script>
+    <script src="scripts/review.js" defer></script>
     <script src="scripts/weatherfinalproject.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,31 +43,68 @@
     </header>
 
     <main>
-        <select name="" id="">
+        <h1>Home</h1>
+        <!--banner-->
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/san.vicente-2.webp" loading="lazy" alt="torre1">
+                <div class="text">San Vicente, Tower</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/torre-2.webp" loading="lazy" alt="torre2">
+                <div class="text">San Vicente, City</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/torre-2.webp" loading="lazy" alt="torre3">
+                <div class="text">San vicente</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!--Beach information-->
+        <div name="tunco" id="tuncobeach">
 
             <img src="" alt="">
             <h2>Tunco Beach</h2>
-            <p></p>
-        </select>
+            <p>
+                Located in the department of La Libertad, it is one of El Salvador's most popular beaches, especially
+                among surfers and young people.</p>
+        </div>
 
-        <select name="" id="">
+        <div name="lasflores" id="lasfloresbeach">
 
             <img src="" alt="">
             <h2>Las Florea Beach</h2>
-            <p></p>
+            <p>
+                Located in the department of San Miguel, it is an ideal destination for surfers of all levels, with
+                consistent waves and a stunning natural setting.</p>
+        </div>
+
+        <!--weather-->
+
+        <p>Current Weather</p>
+        <label for="departmentSelect">Select a department:</label>
+        <select id="departmentSelect">
+            <option value="">-- Pick one --</option>
         </select>
 
+        <div id="weather-result"></div>
 
-        <select name="weather-information" id="weatherInformation">
-            <p>Current Weather</p>
-            <label for="departmentSelect">Select a department:</label>
-            <select id="departmentSelect">
-                <option value="">-- Pick one --</option>
-            </select>
+        <div id="review"></div>
 
-            <div id="weather-result"></div>
-
-        </select>
 
 
     </main>

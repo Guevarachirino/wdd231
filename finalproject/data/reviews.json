@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Eleanor Cameron",
+        "description": "Tunco Beach is one of my favorite places to enjoy my vacations. Five stars.",
+        "date": "2024-06-01",
+        "rating": 5
+    },
+    {
+        "name": "Mary Hernandez",
+        "description": "Las Flores Beach, I love that place.",
+        "date": "2024-05-20",
+        "rating": 4
+    },
+    {
+        "name": "Clara Smith",
+        "description": "I traveled to El Salvador and enjoyed that beach a lot.",
+        "date": "2024-05-10",
+        "rating": 3
+    }
+]

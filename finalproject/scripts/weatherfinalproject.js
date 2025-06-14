@@ -46,12 +46,12 @@ function showWeather(dept) {
         <h2>${dept.name}</h2>
         <img src="${icon}" alt="${data.weather[0].description}">
         <p><strong>${data.weather[0].description}</strong></p>
-        <p>🌡️ Temperatura: ${data.main.temp} °C</p>
-        <p>💨 Viento: ${data.wind.speed} m/s</p>
+        <p>🌡️ Temperature: ${data.main.temp} °F</p>
+        <p>💨 Wind: ${data.wind.speed} m/s</p>
       `;
         })
         .catch(err => {
             console.error(err);
-            result.innerHTML = `<p>Error al obtener el clima de ${dept.name}</p>`;
+            result.innerHTML = `<p>Error getting weather ${dept.name}</p>`;
         });
 }
