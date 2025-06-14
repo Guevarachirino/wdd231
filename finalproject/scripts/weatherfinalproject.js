@@ -1,86 +1,57 @@
-//select the html elements in the documents
-const myTown = document.querySelector('#town');
-const myDescription = document.querySelector('#description');
-const myTemperature = document.querySelector('#temperature');
-const myGraphic = document.querySelector('#graphic');
+const myKey = 'e786808d3a6a707c23fa6cb5f613b6b0';
 
+const departments = [
+    { name: 'La Libertad', lat: 13.4885, lon: -89.3228 },
+    { name: 'Sonsonate', lat: 13.7185, lon: -89.7214 },
+    { name: 'Ahuachapán', lat: 13.9226, lon: -89.845 },
+    { name: 'San Vicente', lat: 13.6406, lon: -88.7854 },
+    { name: 'Usulután', lat: 13.3501, lon: -88.4429 },
+    { name: 'San Miguel', lat: 13.4833, lon: -88.1833 },
+    { name: 'La Unión', lat: 13.328, lon: -87.8439 }
+];
 
+const select = document.getElementById('departmentSelect');
+const result = document.getElementById('weather-result');
 
-// create variables forthe url
+// Llenar el <select> con opciones
+departments.forEach((dept, index) => {
+    const option = document.createElement('option');
+    option.value = index; // Usamos el índice como valor
+    option.textContent = dept.name;
+    select.appendChild(option);
+});
 
-const myKey = "e786808d3a6a707c23fa6cb5f613b6b0"
-const myLat = "13.638835588487488"
-const myLong = "-88.78259102525926"
-
-// construct a full path using template literals
-
-const myURl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
-
-//try to grab the current weather data 
-async function apiFetch() {
-    try {
-        const response = await fetch(myURl);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data); // testing only
-            displayResults(data); // uncomment when ready
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
+// Evento al cambiar el valor del <select>
+select.addEventListener('change', () => {
+    const selectedIndex = select.value;
+    if (selectedIndex === '') {
+        result.innerHTML = '';
+        return;
     }
+
+    const dept = departments[selectedIndex];
+    showWeather(dept);
+});
+
+// Mostrar clima
+function showWeather(dept) {
+    const url = `//api.openweathermap.org/data/2.5/weather?lat=${dept.lat}&lon=${dept.lon}&appid=${myKey}&units=imperial`;
+    //api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            const icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            result.innerHTML = `
+        <h2>${dept.name}</h2>
+        <img src="${icon}" alt="${data.weather[0].description}">
+        <p><strong>${data.weather[0].description}</strong></p>
+        <p>🌡️ Temperatura: ${data.main.temp} °C</p>
+        <p>💨 Viento: ${data.wind.speed} m/s</p>
+      `;
+        })
+        .catch(err => {
+            console.error(err);
+            result.innerHTML = `<p>Error al obtener el clima de ${dept.name}</p>`;
+        });
 }
-// display the json data into my web page 
-function displayResults(data) {
-    console.log('hello');
-    myTown.innerHTML = data.name;
-    myDescription.innerHTML = data.weather[0].description;
-    myTemperature.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    myGraphic.setAttribute('src', iconsrc);
-    myGraphic.setAttribute('alt', data.weather[0].description)
-
-}
-// Nueva función para 3 días
-async function getThreeDayForecast() {
-    const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
-
-    try {
-        const response = await fetch(forecastUrl);
-        if (response.ok) {
-            const data = await response.json();
-
-            const resultadosDiv = document.getElementById('forecast');
-            resultadosDiv.innerHTML = '';
-
-            const dailyData = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
-
-            dailyData.forEach(day => {
-                const date = new Date(day.dt_txt);
-                const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
-                const description = day.weather[0].description;
-                const tempMin = day.main.temp_min.toFixed(1);
-                const tempMax = day.main.temp_max.toFixed(1);
-
-                resultadosDiv.innerHTML += `
-            <div class="destacado">
-              <h3>${dayName}</h3>
-              <p>${description}</p>
-              <p>Min: ${tempMin}&deg;F</p>
-              <p>Max: ${tempMax}&deg;F</p>
-            </div>
-          `;
-            });
-
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log('Error cargando pronóstico:', error);
-    }
-}
-
-//start the process
-apiFetch();
-getThreeDayForecast();

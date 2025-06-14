@@ -162,6 +162,21 @@ main {
     margin: 10px;
 }
 
+/*weather*/
+select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  #weather-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f0f8ff;
+    max-width: 300px;
+  }
+
 /*footer */
 footer {
     background-color: var(--headline-color-on-white);
