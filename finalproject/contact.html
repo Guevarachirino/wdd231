@@ -19,8 +19,7 @@
     <link href="styles/large.css" type="text/css" rel="stylesheet">
     <link href="styles/small.css" type="text/css" rel="stylesheet">
     <script src="scripts/menuresponsive.js" defer></script>
-    <script src="scripts/random.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -44,7 +43,8 @@
 
     <main>
 
-        <h1>Membership Aplication Form</h1>
+        <h1>Book your stay with us</h1>
+        <p>Feel free to message us any time. and we will respond shortly.</p>
         <div class="form-container">
             <form method="GET" action="thankyou.html" class="designOne">
                 <label>Name <input type="text" name="first" required autocomplete="given-name"
@@ -62,9 +62,9 @@
 
                 <h3>Tipo de estadia </h3>
                 <label><input type="radio" name="tipodeestadia" value="resorts" checked> Resorts</label>
-                <label><input type="radio" name="tipodeestadia" value="bronzemembership"> Hotels</label>
-                <label><input type="radio" name="tipodeestadia" value="silvermembership"> Ranch</label>
-                <label><input type="radio" name="tipodeestadia" value="goldmembership"> Bungalows</label>
+                <label><input type="radio" name="tipodeestadia" value="hotels"> Hotels</label>
+                <label><input type="radio" name="tipodeestadia" value="ranch"> Ranch</label>
+                <label><input type="radio" name="tipodeestadia" value="Bungalows"> Bungalows</label>
 
                 <input type="hidden" name="form_timestamp" id="form_timestamp" value="{{current_datetime}}">
 
@@ -75,19 +75,19 @@
 
             <section class="botones">
                 <div class="card1">
-                    <h4>Non Profit Membership</h4>
+                    <h4>Resots</h4>
                     <button class="openModal" data-modal="modal-np">Learn More</button>
                 </div>
                 <div class="card1">
-                    <h4>Bronze Membership</h4>
+                    <h4>Hotels</h4>
                     <button class="openModal" data-modal="modal-bronze">Learn More</button>
                 </div>
                 <div class="card1">
-                    <h4>Silver Membership</h4>
+                    <h4>Ranch</h4>
                     <button class="openModal" data-modal="modal-silver">Learn More</button>
                 </div>
                 <div class="card1">
-                    <h4>Gold Membership</h4>
+                    <h4>Bungalows</h4>
                     <button class="openModal" data-modal="modal-gold">Learn More</button>
                 </div>
             </section>
@@ -98,17 +98,16 @@
         <div id="modal-np" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Non Profit Membership</h2>
-                <p>✔ Free directory listing<br>✔ Access to community events<br>✔ Basic advertising<br>Membership Price:
-                    $30.00</p>
+                <h2>Resorts</h2>
+                <p>✔ activities for children of all ages<br>✔ Less crowded<br>✔ Early Bird Discounts & Promotions</p>
             </div>
         </div>
 
         <div id="modal-bronze" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Bronze Membership</h2>
-                <p>✔ All NP benefits<br>✔ Event discounts<br>✔ Bronze spotlight on homepage<br>Membership Price: $40.00
+                <h2>Hotel</h2>
+                <p>✔ Access to beach activities<br>✔ On-site amenities<br>✔ Package deals<br>✔ Child-friendly options
                 </p>
             </div>
         </div>
@@ -116,7 +115,7 @@
         <div id="modal-silver" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Silver Membership</h2>
+                <h2>Ranch</h2>
                 <p>✔ All Bronze benefits<br>✔ Business training<br>✔ Enhanced directory listing<br>Membership Price:
                     $50.00</p>
             </div>
@@ -125,7 +124,7 @@
         <div id="modal-gold" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Gold Membership</h2>
+                <h2>Bungalows</h2>
                 <p>✔ All Silver benefits<br>✔ Gold spotlight on homepage<br>✔ Personalized promotion<br>Membership
                     Price: $60.00</p>
             </div>
