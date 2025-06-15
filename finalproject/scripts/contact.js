@@ -45,6 +45,6 @@ if (window.location.pathname.includes("thanks.html")) {
       <p><strong>Check out Date:</strong> ${params.get('checkout')}</p>
       <p><strong>Number of Guests:</strong> ${params.get('numberguests')}</p>
       <p><Reservation Type:</strong> ${params.get('tipodeestadia')}</p>
-      <p><strong>Submission Date:</strong> ${params.get('form_timestamp')}</p>
+      <p><strong>Reservation Date:</strong> ${params.get('form_timestamp')}</p>
     `;
 }
