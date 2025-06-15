@@ -37,7 +37,7 @@ if (window.location.pathname.includes("thanks.html")) {
     const params = new URLSearchParams(window.location.search);
 
     document.querySelector('#thankyouresult').innerHTML = `
-      <h2>Congratulations, Thank you for reserving with us!</h2>
+      <h2>Congratulations, Thank you for booking with us!</h2>
       <p><strong>Name:</strong> ${params.get('first')}</p>
       <p><strong>Email:</strong> ${params.get('email')}</p>
       <p><strong>Mobile Number:</strong> ${params.get('phone')}</p>
