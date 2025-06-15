@@ -30,6 +30,42 @@ export const places = [
         "imagen": "torresanvicente.webp"
     },
     {
+        "name": "Rancho La Perla",
+        "location": "El Cuco Beach, San Miguel",
+        "description": "A private ranch ideal for groups or families, featuring gardens, a pool, and private beach access.",
+        "imagen": "torresanvicente.webp"
+    },
+    {
+        "name": "Tortuga Village",
+        "location": "San Luis Talpa, La Paz",
+        "description": "Eco-friendly bungalows with a pool, surrounded by nature and just minutes from the international airport.",
+        "imagen": "torresanvicente.webp"
+    },
+    {
+        "name": "Boca Olas Resort & Villas",
+        "location": "El Tunco, La Libertad",
+        "description": "A modern hotel with private villas, infinity pools, and spa services in one of the country's top beach spots.",
+        "imagen": "torresanvicente.webp"
+    },
+    {
+        "name": "Rancho Las Palmeras",
+        "location": "Costa del Sol Beach, La Paz",
+        "description": "Spacious beachfront accommodation with a pool, green areas, and a fully equipped kitchen, perfect for family vacations.",
+        "imagen": "torresanvicente.webp"
+    },
+    {
+        "name": "Los Almendros Surf Hotel",
+        "location": "El Sunzal, La Libertad",
+        "description": "A cozy hotel for surfers and travelers, strategically located in front of famous waves with a relaxed vibe.",
+        "imagen": "torresanvicente.webp"
+    },
+    {
+        "name": "Casa de Mar Hotel and Villas",
+        "location": "El Sunzal, La Libertad",
+        "description": "A boutique hotel with private beach access, an infinity pool, and a gourmet restaurant in an exclusive setting.",
+        "imagen": "torresanvicente.webp"
+    },
+    {
         "name": "Rancho El Encanto",
         "location": "El Tamarindo Beach, La Unión",
         "description": "A hidden gem with panoramic views, access to untouched beaches, and cozy cabins surrounded by nature.",
