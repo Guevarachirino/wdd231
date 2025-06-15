@@ -37,12 +37,14 @@ if (window.location.pathname.includes("thanks.html")) {
     const params = new URLSearchParams(window.location.search);
 
     document.querySelector('#thankyouresult').innerHTML = `
-      <h2>Congratulations, Thank you for reserving with us, We will call you soon!</h2>
-      <p><strong>First Name:</strong> ${params.get('first')}</p>
-      <p><strong>Last Name:</strong> ${params.get('last')}</p>
+      <h2>Congratulations, Thank you for reserving with us!</h2>
+      <p><strong>Name:</strong> ${params.get('first')}</p>
       <p><strong>Email:</strong> ${params.get('email')}</p>
       <p><strong>Mobile Number:</strong> ${params.get('phone')}</p>
-      <p><strong>Business Name:</strong> ${params.get('organization')}</p>
+      <p><strong>Check in Date:</strong> ${params.get('checkin')}</p>
+      <p><strong>Check out Date:</strong> ${params.get('checkout')}</p>
+      <p><strong>Number of Guests:</strong> ${params.get('numberguests')}</p>
+      <p><Reservation Type:</strong> ${params.get('tipodeestadia')}</p>
       <p><strong>Submission Date:</strong> ${params.get('form_timestamp')}</p>
     `;
 }
