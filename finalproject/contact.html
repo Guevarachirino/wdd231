@@ -35,7 +35,7 @@
             <img src="images/ola.webp" alt="logo" width="100" height="100">
             <a href="index.html">Home</a>
             <a href="#">vacations</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Reserve</a>
             <a href="#">Galeria</a>
         </nav>
 
@@ -52,15 +52,15 @@
                 <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
                         autocomplete="email"></label>
                 <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
-                        placeholder="987-555-1234"></label>
-                <label>Check in Date<input type="date" id="fecha" name="fecha"></label>
-                <label>Check out date<input type="date" id="fecha" name="fecha"></label>
+                        required placeholder="987-555-1234"></label>
+                <label>Check in Date<input type="date" id="fecha" name="fecha" required></label>
+                <label>Check out date<input type="date" id="fecha" name="fecha" required></label>
                 <label>Number of Guests <input type="text" name="numberguests" required autocomplete="number" required
                         placeholder="Please enter as number (2)" title="Number of Guests"></label>
                 <label>Message<textarea name="textarea" rows="7"
                         cols="50">Any special requests or inquiries</textarea></label>
 
-                <h3>Tipo de estadia </h3>
+                <h3>Reservation Type </h3>
                 <label><input type="radio" name="tipodeestadia" value="resorts" checked> Resorts</label>
                 <label><input type="radio" name="tipodeestadia" value="hotels"> Hotels</label>
                 <label><input type="radio" name="tipodeestadia" value="ranch"> Ranch</label>
@@ -75,7 +75,7 @@
 
             <section class="botones">
                 <div class="card1">
-                    <h4>Resots</h4>
+                    <h4>Resorts</h4>
                     <button class="openModal" data-modal="modal-np">Learn More</button>
                 </div>
                 <div class="card1">
@@ -99,7 +99,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Resorts</h2>
-                <p>✔ activities for children of all ages<br>✔ Less crowded<br>✔ Early Bird Discounts & Promotions</p>
+                <p>✔ Activities for children of all ages<br>✔ Less crowded<br>✔ Early Bird Discounts & Promotions</p>
             </div>
         </div>
 
@@ -116,8 +116,9 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Ranch</h2>
-                <p>✔ All Bronze benefits<br>✔ Business training<br>✔ Enhanced directory listing<br>Membership Price:
-                    $50.00</p>
+                <p>✔ Upgrade on arrival, subject to availability<br>✔ Daily Full breakfast<br>✔ Complimentary
+                    Wi-Fi<br>✔ Stays of 7+ nights will receive an additional $200 Food & Beverage credit (for a total of
+                    $300 during stay)</p>
             </div>
         </div>
 
@@ -125,8 +126,8 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Bungalows</h2>
-                <p>✔ All Silver benefits<br>✔ Gold spotlight on homepage<br>✔ Personalized promotion<br>Membership
-                    Price: $60.00</p>
+                <p>✔ Privacy and Space<br>✔ Direct Beach Access<br>✔ Relaxed atmosphere<br>✔ Bungalows often feature fully
+                    equipped kitchens, laundry facilities, and other amenities</p>
             </div>
         </div>
 
@@ -138,9 +139,8 @@
         <div class="footer-container">
 
             <div class="footer-left">
-                <p>San Vicente's Chamber of Commerce</p>
-                <p>123 Calle Panamerica<br>San Vicente, El Salvador</p>
-                <p>info@sanvicentechambre.org</p>
+                <p>Olas y Sol SV </p>
+                <p>info@solasysol.org</p>
                 <p>📞 +503 1234-5678</p>
             </div>
 

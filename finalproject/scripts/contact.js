@@ -33,11 +33,11 @@ if (window.location.pathname.includes("contact.html")) {
 }
 // solo para funcione al estar en thankyou.html
 // Verifica si estamos en thankyou.html
-if (window.location.pathname.includes("thankyou.html")) {
+if (window.location.pathname.includes("thanks.html")) {
     const params = new URLSearchParams(window.location.search);
 
     document.querySelector('#thankyouresult').innerHTML = `
-      <h2>Congratulations, Thank you for being part of our group!</h2>
+      <h2>Congratulations, Thank you for reserving with us, We will call you soon!</h2>
       <p><strong>First Name:</strong> ${params.get('first')}</p>
       <p><strong>Last Name:</strong> ${params.get('last')}</p>
       <p><strong>Email:</strong> ${params.get('email')}</p>
