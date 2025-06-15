@@ -3,14 +3,12 @@ import { places } from '../data/places.mjs';
 
 const allPlacesContainer = document.querySelector('#allplaces');
 const searchInput = document.querySelector('#search-input');
+const searchButton = document.querySelector('#search-button');  // selecciona el botón
 
-// Función para resaltar coincidencias
 function highlightMatch(text, query) {
-    const regex = new RegExp(`(${query})`, 'gi');
-    return text.replace(regex, '<mark>$1</mark>');
+    return text;  // Ya no resalta nada
 }
 
-// Función para renderizar lugares
 function renderPlaces(placeList, query = '') {
     allPlacesContainer.innerHTML = '';
 
@@ -28,11 +26,11 @@ function renderPlaces(placeList, query = '') {
         const description = query ? highlightMatch(place.description, query) : place.description;
 
         card.innerHTML = `
-      <img src="images/${place.imagen}" alt="${place.name}">
-      <h3>${name}</h3>
-      <p>${location}</p>
-      <p>${description}</p>
-    `;
+          <img src="images/${place.imagen}" alt="${place.name}">
+          <h3>${name}</h3>
+          <p>${location}</p>
+          <p>${description}</p>
+        `;
 
         allPlacesContainer.appendChild(card);
     });
@@ -41,8 +39,8 @@ function renderPlaces(placeList, query = '') {
 // Mostrar todos los lugares al cargar
 renderPlaces(places);
 
-// Buscar en tiempo real mientras se escribe
-searchInput.addEventListener('input', () => {
+// Búsqueda SOLO al hacer clic en el botón
+searchButton.addEventListener('click', () => {
     const query = searchInput.value.toLowerCase().trim();
 
     const filtered = places.filter(place =>

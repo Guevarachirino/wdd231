@@ -396,6 +396,67 @@ form.designOne {
     color: black;
 }
 
+/*estilo para touristplaces.html lista */
+/* Estilo base para el contenedor */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Tarjeta del lugar */
+.place-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform-style: preserve-3d;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Imagen principal */
+.place-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Información */
+.place-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.place-card p {
+    margin: 0.2rem 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Efecto espejo debajo de cada tarjeta */
+.place-card::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: scaleY(-1);
+    opacity: 0.2;
+    filter: blur(3px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Para que no se vea muy plano */
+.place-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
 
 
 /*footer */
