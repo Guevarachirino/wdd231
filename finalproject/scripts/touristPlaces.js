@@ -2,7 +2,7 @@ import { places } from '../data/places.mjs';
 
 const allPlacesContainer = document.querySelector('#allplaces');
 
-accommodations.forEach(place => {
+places.forEach(place => {
     const card = document.createElement('div');
     card.classList.add('place-card');
 
