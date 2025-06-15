@@ -196,6 +196,19 @@ select {
     color: #555;
 }
 
+/*estilo para el file thankyou.html*/
+
+.thankyou {
+    background-color: #f4f1de;
+    padding: 1.5rem;
+    border: 2px solid #e07a5f;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 2rem auto;
+    color: #3d405b;
+    font-size: 1rem;
+}
+
 
 /* estilo para el formulario de join.html*/
 form {
@@ -383,18 +396,7 @@ form.designOne {
     color: black;
 }
 
-/*estilo para el file thankyou.html*/
 
-.thankyou {
-    background-color: #f4f1de;
-    padding: 1.5rem;
-    border: 2px solid #e07a5f;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: 2rem auto;
-    color: #3d405b;
-    font-size: 1rem;
-}
 
 /*footer */
 footer {
