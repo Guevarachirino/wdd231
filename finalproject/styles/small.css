@@ -137,4 +137,14 @@
     .beach-text {
         max-width: 100%;
     }
+
+    /*weather and reviews*/
+    .info-section {
+        flex-direction: column;
+    }
+
+    .weather-box,
+    .review-box {
+        width: 100%;
+    }
 }

@@ -228,14 +228,16 @@ main {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f8f8f8;
+    background-color: var(--accent2-color);
 }
 
 .weather-box select {
     margin-top: 0.5rem;
     padding: 0.4rem;
     font-size: 1rem;
+
 }
+
 
 
 
