@@ -46,6 +46,10 @@ header {
 
 .navigation a.active {
     content: "* ";
+    color: var(--accent1-color);
+    background-color: var(--nav-background-color);
+
+
 }
 
 .navigation {
