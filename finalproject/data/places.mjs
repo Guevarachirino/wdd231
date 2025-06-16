@@ -3,7 +3,7 @@ export const places = [
         "name": "Hotel Los Cobanos Village Lodge",
         "location": "Los Cóbanos Beach, Sonsonate",
         "description": "An eco-friendly beachfront hotel offering activities like diving, kayaking, and natural reef observation.",
-        "imagen": "cafe del mar.webp"
+        "imagen": "cafedelmar.webp"
     },
     {
         "name": "Rancho Estero y Mar",
@@ -27,7 +27,7 @@ export const places = [
         "name": "Hotel Miraflores",
         "location": "Las Flores Beach, San Miguel",
         "description": "A surfers paradise with ocean-view rooms, a restaurant, and direct access to perfect waves.",
-        "imagen": "cafe del mar.webp"
+        "imagen": "cafedelmar.webp"
     },
     {
         "name": "Rancho La Perla",
