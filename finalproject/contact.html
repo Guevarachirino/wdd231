@@ -29,21 +29,25 @@
 
 <body>
 
+
     <header>
-        <button type="button" id="menu"> X </button>
+        <!-- Menu hamb... -->
+        <button type="button" id="menu">&#9776;</button>
         <nav class="navigation">
             <img src="images/ola.webp" alt="logo" width="100" height="100">
-            <a href="index.html">Home</a>
-            <a href="touristPlaces.html">vacations</a>
-            <a href="contact.html">Reserve</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="touristPlaces.html">Vacations</a></li>
+                <li><a href="contact.html">Reserve</a></li>
+            </ul>
         </nav>
-
     </header>
+
 
     <main>
 
-        <h1>Book your stay with us</h1>
-        <p>Feel free to message us any time. and we will respond shortly.</p>
+        <h1 class="bookh1">Book your stay with us</h1>
+        <p class="bookh1">Feel free to message us any time. and we will respond shortly.</p>
         <div class="form-container">
             <form method="GET" action="thanks.html" class="designOne">
                 <label>Name <input type="text" name="first" required autocomplete="given-name" title="Name"></label>
@@ -153,9 +157,9 @@
             </div>
 
             <div class="footer-right">
-                <p>WDD231 Class Project</p>
+                <p>WDD231 Class Final Project</p>
                 <p>Melissa Chirino</p>
-                <p>&copy; <span id="year"></span> San Vicente's Chamber of Commerce</p>
+                <p>&copy; <span id="year"></span> Olas y Sol SV</p>
                 <p>Last Modification: <span id="oLastModif"></span></p>
             </div>
 
