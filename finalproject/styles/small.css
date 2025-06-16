@@ -82,6 +82,11 @@
         width: 100%;
         margin-bottom: 10px;
     }
+
+    form.designOne {
+        width: 100%;
+
+    }
 }
 
 
@@ -122,6 +127,7 @@
     .form-container {
         display: block;
     }
+
 
     /*index.html pictures and text stilo*/
     .beach-section {
