@@ -3,31 +3,31 @@ export const places = [
         "name": "Hotel Los Cobanos Village Lodge",
         "location": "Los Cóbanos Beach, Sonsonate",
         "description": "An eco-friendly beachfront hotel offering activities like diving, kayaking, and natural reef observation.",
-        "imagen": "torresanvicente.webp"
+        "imagen": "airshot beach.webp"
     },
     {
         "name": "Rancho Estero y Mar",
         "location": "El Pimental Beach, La Paz",
         "description": "A tourist complex with a pool, restaurant, and direct beach access surrounded by mangroves.",
-        "imagen": "torresanvicente.webp"
+        "imagen": "beach town sunset.webp"
     },
     {
         "name": "Mizata Point Resort",
         "location": "Mizata, La Libertad",
         "description": "A boutique resort ideal for surfers, featuring luxury cabins, a pool, and access to a quiet beach.",
-        "imagen": "torresanvicente.webp"
+        "imagen": "boardwalk.webp"
     },
     {
         "name": "Palo Verde Bungalow",
         "location": "El Zonte, La Libertad",
         "description": "Rustic yet modern bungalows just steps from the ocean, in a backpacker and surfer-friendly destination.",
-        "imagen": "torresanvicente.webp"
+        "imagen": "boda playera.webp"
     },
     {
         "name": "Hotel Miraflores",
         "location": "Las Flores Beach, San Miguel",
         "description": "A surfers paradise with ocean-view rooms, a restaurant, and direct access to perfect waves.",
-        "imagen": "torresanvicente.webp"
+        "imagen": "cafe del mar.webp"
     },
     {
         "name": "Rancho La Perla",
