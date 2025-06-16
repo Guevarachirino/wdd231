@@ -1,8 +1,8 @@
 async function loadRandomReview() {
-  console.log("Intentando cargar reseña aleatoria...");
+  console.log("Trying to load random review...");
   try {
     const response = await fetch("data/reviews.json");
-    if (!response.ok) throw new Error("No se pudo cargar el archivo JSON.");
+    if (!response.ok) throw new Error("Could not load JSON file.");
 
     const reviews = await response.json();
 
@@ -30,8 +30,8 @@ async function loadRandomReview() {
         </blockquote>
       `;
   } catch (error) {
-    console.error("Error cargando la reseña:", error);
-    document.getElementById('review').textContent = "No se pudo cargar la reseña.";
+    console.error("Error loading review:", error);
+    document.getElementById('review').textContent = "Could not load review.";
   }
 }
 
