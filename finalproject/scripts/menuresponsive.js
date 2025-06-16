@@ -2,16 +2,18 @@
 const menuButton = document.querySelector('#menu');
 const nav = document.querySelector('.navigation');
 
+//probando menu
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
 
     // Cambiar el ícono
     if (nav.classList.contains('open')) {
-        menuButton.innerHTML = '✖'; // X (cerrar)
+        menuButton.textContent = '✖'; // X (cerrar)
     } else {
-        menuButton.innerHTML = '&#9776;'; // ☰ (hamburguesa)
+        menuButton.textContent = '☰'; // ☰ (hamburguesa)
     }
 });
+
 
 // fecha de modificacion
 const getyear = document.getElementById('year');
