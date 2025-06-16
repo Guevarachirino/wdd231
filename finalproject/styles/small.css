@@ -63,7 +63,7 @@
     .navigation img {
         margin-bottom: 1rem;
     }
-    
+
     /*footer*/
     .footer-container {
         flex-direction: column;
@@ -121,5 +121,20 @@
 
     .form-container {
         display: block;
+    }
+
+    /*index.html pictures and text stilo*/
+    .beach-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beach-section img {
+        width: 100%;
+        max-width: 90vw;
+    }
+
+    .beach-text {
+        max-width: 100%;
     }
 }

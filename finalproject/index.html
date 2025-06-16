@@ -77,36 +77,47 @@
         </div>
 
         <!--Beach information-->
-        <div name="tunco" id="tuncobeach">
-
-            <img src="images/one.jpeg" alt="">
-            <h2>Tunco Beach</h2>
-            <p>
-                Located in the department of La Libertad, it is one of El Salvador's most popular beaches, especially
-                among surfers and young people.</p>
+        <div class="beach-section" id="tuncobeach">
+            <img src="images/one.jpeg" alt="Tunco Beach">
+            <div class="beach-text">
+                <h2>Tunco Beach</h2>
+                <p>
+                    Located in the department of La Libertad, it is one of El Salvador's most popular beaches, especially
+                    among surfers and young people.
+                </p>
+            </div>
         </div>
-
-        <div name="lasflores" id="lasfloresbeach">
-
-            <img src="images/vacaciones.jpeg" alt="">
-            <h2>Las Florea Beach</h2>
-            <p>
-                Located in the department of San Miguel, it is an ideal destination for surfers of all levels, with
-                consistent waves and a stunning natural setting.</p>
+        
+        <div class="beach-section" id="lasfloresbeach">
+            <img src="images/vacaciones.jpeg" alt="Las Flores Beach">
+            <div class="beach-text">
+                <h2>Las Flores Beach</h2>
+                <p>
+                    Located in the department of San Miguel, it is an ideal destination for surfers of all levels, with
+                    consistent waves and a stunning natural setting.
+                </p>
+            </div>
         </div>
+        
 
         <!--weather-->
 
-        <p>Current Weather</p>
-        <label for="departmentSelect">Select a department:</label>
-        <select id="departmentSelect">
-            <option value="">-- Pick one --</option>
-        </select>
-
-        <div id="weather-result"></div>
-
-        <div id="review"></div>
-
+        <div class="info-section">
+            <div class="weather-box">
+              <p>Current Weather</p>
+              <label for="departmentSelect">Select a department:</label>
+              <select id="departmentSelect">
+                  <option value="">-- Pick one --</option>
+              </select>
+              <div id="weather-result"></div>
+            </div>
+          
+            <div class="review-box">
+              <h2>Reviews</h2>
+              <div id="review"></div>
+            </div>
+          </div>
+          
 
 
     </main>

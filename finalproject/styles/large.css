@@ -182,39 +182,64 @@ main {
     margin: 10px;
 }
 
-/*weather*/
-select {
-    padding: 10px;
-    font-size: 1rem;
-    margin-top: 10px;
+/*index.html stilo de parrafos con pictures...*/
+
+.beach-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    background-color: #E0E0E0;
 }
 
-#weather-result {
-    margin-top: 20px;
-    padding: 15px;
+.beach-section img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
-    background: #f0f8ff;
-    max-width: 300px;
 }
 
-/*reviews*/
-.stars {
-    font-size: 1.2rem;
-    color: gold;
+.beach-text {
+    max-width: 600px;
 }
 
-#review blockquote {
-    font-style: italic;
+.beach-text h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.beach-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/*weather and reviews*/
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.weather-box,
+.review-box {
+    flex: 1;
     padding: 1rem;
-    background: #f9f9f9;
-    border-left: 5px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
 }
 
-#review footer {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #555;
+.weather-box select {
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    font-size: 1rem;
 }
+
+
+
+
 
 /*estilo para el file thankyou.html*/
 
