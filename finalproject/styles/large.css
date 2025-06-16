@@ -238,12 +238,12 @@ main {
 
 }
 
-.bookbutton{
-    background-color: #3D405B;
-    color: white;
+.bookbutton {
+    background-color: var(--headline-color-on-white);
+    color: var(--accent1-color);
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    border-radius: 9px;
     cursor: pointer;
     opacity: 0.9;
     /* cambia de 0.0 (transparente) a 1.0 (completo) */
