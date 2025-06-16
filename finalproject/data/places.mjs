@@ -9,7 +9,7 @@ export const places = [
         "name": "Rancho Estero y Mar",
         "location": "El Pimental Beach, La Paz",
         "description": "A tourist complex with a pool, restaurant, and direct beach access surrounded by mangroves.",
-        "imagen": "beach town sunset.webp"
+        "imagen": "beachtownsunset.webp"
     },
     {
         "name": "Mizata Point Resort",
@@ -21,7 +21,7 @@ export const places = [
         "name": "Palo Verde Bungalow",
         "location": "El Zonte, La Libertad",
         "description": "Rustic yet modern bungalows just steps from the ocean, in a backpacker and surfer-friendly destination.",
-        "imagen": "boda playera.webp"
+        "imagen": "bodaplayera.webp"
     },
     {
         "name": "Hotel Miraflores",
@@ -39,25 +39,25 @@ export const places = [
         "name": "Tortuga Village",
         "location": "San Luis Talpa, La Paz",
         "description": "Eco-friendly bungalows with a pool, surrounded by nature and just minutes from the international airport.",
-        "imagen": "piscina natural.webp"
+        "imagen": "piscinanatural.webp"
     },
     {
         "name": "Boca Olas Resort & Villas",
         "location": "El Tunco, La Libertad",
         "description": "A modern hotel with private villas, infinity pools, and spa services in one of the country's top beach spots.",
-        "imagen": "playa agua clara.webp"
+        "imagen": "playaaguaclara.webp"
     },
     {
         "name": "Rancho Las Palmeras",
         "location": "Costa del Sol Beach, La Paz",
         "description": "Spacious beachfront accommodation with a pool, green areas, and a fully equipped kitchen, perfect for family vacations.",
-        "imagen": "rancho en la playa.webp"
+        "imagen": "ranchoenlaplaya.webp"
     },
     {
         "name": "Los Almendros Surf Hotel",
         "location": "El Sunzal, La Libertad",
         "description": "A cozy hotel for surfers and travelers, strategically located in front of famous waves with a relaxed vibe.",
-        "imagen": "resort sunset.webp"
+        "imagen": "resortsunset.webp"
     },
     {
         "name": "Casa de Mar Hotel and Villas",
@@ -69,6 +69,6 @@ export const places = [
         "name": "Rancho El Encanto",
         "location": "El Tamarindo Beach, La Unión",
         "description": "A hidden gem with panoramic views, access to untouched beaches, and cozy cabins surrounded by nature.",
-        "imagen": "beach town sunset.webp"
+        "imagen": "beachtownsunset.webp"
     }
 ];
