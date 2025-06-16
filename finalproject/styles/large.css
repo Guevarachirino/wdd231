@@ -238,6 +238,21 @@ main {
 
 }
 
+.bookbutton{
+    background-color: #3D405B;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    /* cambia de 0.0 (transparente) a 1.0 (completo) */
+    opacity: 0;
+    /* Oculta al inicio */
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    animation: aparecerDesdeAbajo 0.6s ease-out forwards;
+}
+
 
 
 
