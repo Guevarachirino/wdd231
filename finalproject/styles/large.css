@@ -279,68 +279,68 @@ main {
     font-size: 1rem;
 }
 
-
-/* estilo para el formulario de join.html*/
+/*probando error de formulario */
 form {
     margin: 1rem 2%;
-
-    label {
-        display: block;
-        font-size: .9rem;
-        color: #000000;
-        padding-top: .2rem;
-    }
-
-    h3 {
-        font-size: .9rem;
-        color: #632a1a;
-        margin: 1.5rem 0 .2rem 0;
-    }
-
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    textarea,
-    select {
-        display: block;
-        margin: .1rem 0 1rem 0;
-        padding: .3rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #555;
-        font-size: 1rem;
-        color: #3D405B;
-        width: 250px;
-    }
-
-    input:required {
-        border-left-color: #d70000;
-    }
-
-    input:focus {
-        border-left-color: black;
-        outline: none;
-    }
-
-    input:required:valid {
-        border-left-color: green;
-    }
-
-    input[type=submit] {
-        border: none;
-        text-align: center;
-        background-color: #3D405B;
-        color: white;
-        border-radius: 1rem;
-        padding: .75rem 1.5rem;
-        margin: 2rem 0;
-        font-size: 1.2rem;
-        -webkit-appearance: none;
-        appearance: none;
-    }
 }
+
+form label {
+    display: block;
+    font-size: .9rem;
+    color: #000000;
+    padding-top: .2rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    color: #632a1a;
+    margin: 1.5rem 0 .2rem 0;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form textarea,
+form select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 
 
 input:-webkit-autofill {
