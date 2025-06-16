@@ -44,6 +44,10 @@ header {
     width: 100%;
 }
 
+.navigation a.active {
+    content: "* ";
+}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -370,7 +374,7 @@ input:-webkit-autofill {
 
 form.designOne {
     width: 30%;
-   
+
 }
 
 .botones {

@@ -14,6 +14,16 @@ menuButton.addEventListener('click', () => {
     }
 });
 
+// Wayfinding: marcar el enlace actual
+const links = document.querySelectorAll('.navigation a');
+const currentPage = location.pathname.split('/').pop();
+
+links.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+    }
+});
+
 
 // fecha de modificacion
 const getyear = document.getElementById('year');
