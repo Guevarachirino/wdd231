@@ -4,11 +4,10 @@ const searchButton = document.querySelector('#search-button');
 
 async function loadPlaces() {
     try {
-        const response = await fetch("data/places.json");
+        const response = await fetch("./data/places.json");
         const places = await response.json();
         displayPlaces(places);
 
-        // Añadir evento al botón para buscar
         searchButton.addEventListener('click', () => {
             const query = searchInput.value.toLowerCase().trim();
 
@@ -16,12 +15,11 @@ async function loadPlaces() {
                 place.name.toLowerCase().includes(query) ||
                 place.location.toLowerCase().includes(query) ||
                 place.description.toLowerCase().includes(query) ||
-                place.imagen.toLowerCase().includes(query) // buscar por nombre de imagen también
+                place.imagen.toLowerCase().includes(query)
             );
 
             displayPlaces(filtered);
         });
-
     } catch (error) {
         console.error("Error loading places:", error);
         allPlacesContainer.innerHTML = "<p>Error cargando los lugares.</p>";
@@ -41,7 +39,7 @@ function displayPlaces(places) {
         card.classList.add("place-card");
 
         card.innerHTML = `
-            <img src="images/${place.imagen}" alt="${place.name}">
+            <img src="./images/${place.imagen}" alt="${place.name}">
             <h3>${place.name}</h3>
             <p>${place.location}</p>
             <p>${place.description}</p>
@@ -50,5 +48,5 @@ function displayPlaces(places) {
     });
 }
 
-// Iniciar la carga y mostrar los lugares
 loadPlaces();
+
