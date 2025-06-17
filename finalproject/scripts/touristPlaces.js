@@ -4,7 +4,7 @@ const searchButton = document.querySelector('#search-button');
 
 async function loadPlaces() {
     try {
-        const response = await fetch("data/places.json");
+        const response = await fetch("./data/places.json");
         const places = await response.json();
         displayPlaces(places);
 
