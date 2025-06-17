@@ -1,53 +1,54 @@
-
-import { places } from '../data/places.mjs';
-
 const allPlacesContainer = document.querySelector('#allplaces');
 const searchInput = document.querySelector('#search-input');
-const searchButton = document.querySelector('#search-button');  // selecciona el botón
+const searchButton = document.querySelector('#search-button');
 
-function highlightMatch(text, query) {
-    return text;  // Ya no resalta nada
+async function loadPlaces() {
+    try {
+        const response = await fetch("data/places.json");
+        const places = await response.json();
+        displayPlaces(places);
+
+        // Añadir evento al botón para buscar
+        searchButton.addEventListener('click', () => {
+            const query = searchInput.value.toLowerCase().trim();
+
+            const filtered = places.filter(place =>
+                place.name.toLowerCase().includes(query) ||
+                place.location.toLowerCase().includes(query) ||
+                place.description.toLowerCase().includes(query) ||
+                place.imagen.toLowerCase().includes(query) // buscar por nombre de imagen también
+            );
+
+            displayPlaces(filtered);
+        });
+
+    } catch (error) {
+        console.error("Error loading places:", error);
+        allPlacesContainer.innerHTML = "<p>Error cargando los lugares.</p>";
+    }
 }
 
-function renderPlaces(placeList, query = '') {
-    allPlacesContainer.innerHTML = '';
+function displayPlaces(places) {
+    allPlacesContainer.innerHTML = "";
 
-    if (placeList.length === 0) {
-        allPlacesContainer.innerHTML = '<p>No places found.</p>';
+    if (places.length === 0) {
+        allPlacesContainer.innerHTML = "<p>No se encontraron lugares.</p>";
         return;
     }
 
-    placeList.forEach(place => {
-        const card = document.createElement('div');
-        card.classList.add('place-card');
-
-        const name = query ? highlightMatch(place.name, query) : place.name;
-        const location = query ? highlightMatch(place.location, query) : place.location;
-        const description = query ? highlightMatch(place.description, query) : place.description;
+    places.forEach(place => {
+        const card = document.createElement("div");
+        card.classList.add("place-card");
 
         card.innerHTML = `
-          <img src="images/${place.imagen}" alt="${place.name}">
-          <h3>${name}</h3>
-          <p>${location}</p>
-          <p>${description}</p>
+            <img src="images/${place.imagen}" alt="${place.name}">
+            <h3>${place.name}</h3>
+            <p>${place.location}</p>
+            <p>${place.description}</p>
         `;
-
         allPlacesContainer.appendChild(card);
     });
 }
 
-// Mostrar todos los lugares al cargar
-renderPlaces(places);
-
-// Búsqueda SOLO al hacer clic en el botón
-searchButton.addEventListener('click', () => {
-    const query = searchInput.value.toLowerCase().trim();
-
-    const filtered = places.filter(place =>
-        place.name.toLowerCase().includes(query) ||
-        place.location.toLowerCase().includes(query) ||
-        place.description.toLowerCase().includes(query)
-    );
-
-    renderPlaces(filtered, query);
-});
+// Iniciar la carga y mostrar los lugares
+loadPlaces();
